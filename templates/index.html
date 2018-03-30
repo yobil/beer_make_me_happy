@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
+<script src="/static/js/jquery.gridly.js" type="text/javascript"></script>
+<link href="/static/css/jquery.gridly.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style type="text/css">
+  .gridly {
+    position: relative;
+    width: 960px;
+  }
+  .brick.small {
+    width: 140px;
+    height: 140px;
+  }
+  .brick.large {
+    width: 300px;
+    height: 300px;
+  }
+</style>
+<div class="gridly">
+  <div class="brick small">ezfzef</div>
+  <div class="brick small">fezfezf</div>
+  <div class="brick large">fezfez{% include 'graph/popular.html' %}</div>
+  <div class="brick small">zefezf{% include 'graph/popular2.html' %}</div>
+  <div class="brick small">fezfez{% include 'graph/popular.html' %}</div>
+  <div class="brick large">zefezfze{% include 'graph/popular.html' %}</div>
+</div>
+<script>
+  $('.gridly').gridly({
+    base: 60, // px
+    gutter: 20, // px
+    columns: 12
+  });
+</script>
+
+
+
+</body>
+</html>
